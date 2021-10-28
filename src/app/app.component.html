@@ -1,0 +1,88 @@
+
+<nav class="navbar navbar-expand-lg ">
+  <div class="container-fluid">
+    <!--LOGO-->
+    <a class="navbar-brand" href="#">
+      <img src="../assets/imgs/logo.png" alt="" width="150" height="40">
+    </a>
+
+    <!--search-->
+    <div class="navbar-nav mr-auto">
+      <form class="form-search form-inline">
+          <div class="input-group">
+             <input type="text" class="form-control me-2  bg-light" id="sea" 
+             placeholder="Search For Patient (Name,Code,Phone Number)"/> 
+    <!--Button-->           
+              <button type="submit" class="btn btn-outline-primary bg-light btn-sm" 
+              style=" margin-top: 5px; border:none; " > 
+                <img src="../assets/imgs/search.png" id="i"></button>
+          </div>
+      </form>
+    </div>
+
+      <!--Lang-->
+ 
+      <div>
+     <select name="lang" class="select">
+       <option value="1" selected>English</option>
+       <option value="2">Arabic</option>
+     </select>
+      </div>
+
+      <!--ACC-->
+
+      <div class="acc">
+        <a class="navbar-brand" href="#">
+          <img src="../assets/imgs/user.png" alt="user" width="30px" height="30px" style="margin-bottom: 5px;">
+        </a>
+        <a style="color: blue;">Nada Mansour</a>
+      </div>
+  </div>
+</nav>
+
+      <!--Navigation-->
+      
+      <div class="navi">
+        <div class="row" style="margin-left: 3px;">
+          <div class="col-xs" style="border-right: 1px solid #fff; margin-left: 10px;" >
+
+            <div ngbDropdown class="dropdown" >
+              <button ngbDropdownToggle class="btn btn-sm" type="button" id="dropdownMenuButton1" 
+              aria-expanded="false"  style="color: rgb(62, 62, 180); ">
+                <img src="../assets/imgs/icons8-squared-menu-50 (1).png" alt="" 
+                 width="19px" height="19px" style="margin-bottom: 3px;">
+
+            </button>
+              <ul ngbDropdownMenu aria-labelledby="dropdownMenuButton1" style="background-color: rgb(218, 218, 233);">
+                <li style="width: 400px; ">
+                <a ngbDropdownItem [routerLink]="['/product']" routerLinkActive="router-link-active"  style="color: blue;"> 
+                  <img src="../assets/imgs/3703249.png" width="20px" height="20px">
+                   Product</a></li>
+               
+              </ul>
+            </div>
+            
+          </div>
+          <div class="col">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs__item breadcrumbs__item--first">
+                  <img src="../assets/imgs/icons8-home-64.png" alt="user" width="20px" height="20px" style="margin-bottom: 2px;" >
+              </li>
+              <li class="breadcrumbs__item">
+                <a [routerLink]="['']" style="color: #fff;">Home</a>
+              </li>
+              <li class="breadcrumbs__item breadcrumbs__item--last">
+                <a [routerLink]="['/product']" style="color: #fff;">Product</a>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    
+    
+    
+          <!--FOOTER-->
+          <div class="footer">
+            <p style="text-align: center; color: #fff;">Dot Care 5.0.0.1 &copy; Copyright 2021,AHBS</p>
+          </div>
+      <router-outlet></router-outlet>

@@ -1,0 +1,122 @@
+<div class="cont">
+    <h6 style="margin:5px 0 3px 20px;">
+        <img src="../assets/imgs/icons8-business-report-64.png" width="20px" height="20px"> 
+        Basic Information</h6> <hr style="margin:0 10px 0 10px;">
+
+      <!--form-->
+    <form >
+      <!--row1-->
+        <div class="row" id="rm">
+            <div class="col la" id="input">
+                <label for="warehouse">Warehouse <sup class="star">*</sup></label> <br />
+                <select>
+                    <option value="0">Select Warehouse</option>
+                    <option value="1">wh1</option>
+                    <option value="1">wh2</option>
+                    <option value="1">wh3</option>
+
+                  </select>  
+            </div>
+
+            <div class="col la" id="output">
+                <label for="type">Type <sup class="star">*</sup></label> <br />
+                <select>
+                    <option value="0">Select Type</option>
+                    <option ></option>
+                  </select>
+                    
+                     
+            </div>
+
+            <div class="col">
+                <input type ="checkbox" style="margin-top: 25px;" disabled><label>Show zero balance</label>
+            </div>
+        </div>
+
+        <!--row2-->
+        <div class="row" style="margin-bottom: 10px;" id="rm">
+            <div class="col" id="marr">
+              <input class="form-check-input" type="radio" name="radiobutton" id="" value="option1" checked>  
+              <label class="form-check-label" for="radiobutton1">
+                All Products
+            </label>
+   
+            </div>
+            <div class="col">
+              <input class="form-check-input" type="radio" name="radiobutton" id="radiobutton2"
+              value="option2">
+              <label class="form-check-label" for="exampleRadios2">
+                Specific Product
+            </label>
+            </div>
+            <!--hidden input-->
+           <div class="col">
+            <input type="hidden" id="postId" name="postId" value="">
+           </div>
+        </div>
+
+        <!--row3-->
+        <div class="row" id="rm">
+            <button type="button" class="btn btn-primary ml-auto"
+             style="margin-right: 50px;background-color: rgb(62, 62, 180);">Search</button>
+
+        </div>
+  
+    </form>    
+    <!--end form-->
+
+    <!--Grid-->
+    <h6 style="margin:5px 0 3px 20px;">
+        Product Details</h6> <hr style="margin:0 10px 0 10px;">
+       
+   
+  <div class="container" style=" margin-top: 15px;">
+           <div class="row r1" style="background-color: rgb(191, 191, 255);">
+             <div class="col-md">
+               Product
+             </div>
+          <div class="col-md">
+              On-Hand
+              </div>
+         <div class="col-md">
+             Type
+             </div>
+                </div>
+         <div class="row r2" style="background-color: rgb(225, 228, 255);">
+               <div class="col-md " >  
+                 <input type="search" placeholder="search.." style="border: none;margin: 6px 0 6px 0;">
+          
+           </div>
+         <div class="col-md">
+          <input type="search" placeholder="search.." style="border: none;margin: 6px 0 6px 0;">
+          
+            </div>
+         <div class="col-md">
+           <input type="search" placeholder="search.." style="border: none;margin: 6px 0 6px 0;">
+          
+            </div>
+           </div>
+          <div class="row" style="background-color: #fff;">
+            <div class="col">
+             <img src="../assets/imgs/noDataFoundGreen.svg" style="margin-left: 40%;margin-top: 2%;">
+                  <p style="margin-left:36%">Select Warehouse and Product</p>
+             </div>
+                        </div>
+                        
+             <div class="row" style="background-color: rgb(225, 228, 255); ">
+                           
+                <div class="quantity">
+                                 
+                <button id="sub" (click)=subValue()>-</button>
+                  <label for="" id="la">{{quan}}</label>
+                 <button type="submit" id="add" (click)="addValue()">+</button>
+                                
+                   </div>
+                      
+                     </div>
+
+                   </div>
+    
+        
+
+

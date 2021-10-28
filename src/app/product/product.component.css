@@ -1,0 +1,60 @@
+.cont{
+    background-color: rgb(247, 247, 252);
+    border: 1px solid rgb(197, 197, 255) ;
+    border-radius: 5px;
+    margin: 6px 30px 15px 30px;
+    height: 520px;
+
+}
+
+.row {
+    margin-left: 1%;
+
+}
+
+#marr{
+    margin-left: 20px;
+}
+#rm{
+    margin-top: 15px;
+   
+}
+.col .la{
+    display: inline-block
+}
+
+.star {
+    color: red;
+}
+
+.quantity{
+    display: flex;
+    justify-content: center;
+}
+.quantity button{
+    width: 35px;
+    height: 35px;
+    border:1px solid #000;
+    color:#000;
+    border-radius: 0;
+    background:#ffff;
+}
+
+
+
+#la{
+    width:30px ; 
+    text-align: center;
+    margin-top: 5px;
+}
+
+#sub {
+    background-color: rgb(171, 188, 202);
+    border-color: rgb(242, 246, 250);
+    
+}
+#add{
+    background-color: rgb(171, 188, 202);
+    border-color: rgb(242, 246, 250);
+
+}
